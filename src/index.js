@@ -1,14 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const hello = React.createElement(
+  'div',
+  {
+    className: 'wraper',
+  },
+  [
+    React.createElement(
+      'h1',
+      null,
+      'Tytul pierwszy',
+    ),
+    React.createElement(
+      'p',
+      null,
+      'Tresc dokumentu',
+    )
+  ],
+);
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  hello,
+  document.getElementById('root'),
 );
 
 // If you want to start measuring performance in your app, pass a function
