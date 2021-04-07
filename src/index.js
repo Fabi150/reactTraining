@@ -3,27 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-const hello = React.createElement(
-  'div',
-  {
-    className: 'wraper',
-  },
-  [
-    React.createElement(
-      'h1',
-      null,
-      'Tytul pierwszy',
-    ),
-    React.createElement(
-      'p',
-      null,
-      'Tresc dokumentu',
-    )
-  ],
+const App = () => (
+ <div className="wraper">
+   <h1 className="naglowek1">Pierwszy naglowek</h1>
+   <p className="tekst">Przykladowt tekst</p>
+ </div>
 );
 
 ReactDOM.render(
-  hello,
+  <App />,
   document.getElementById('root'),
 );
 
