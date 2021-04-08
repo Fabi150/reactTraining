@@ -2,13 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import App from './App';
 
-const App = () => (
- <div className="wraper">
-   <h1 className="naglowek1">Pierwszy naglowek</h1>
-   <p className="tekst">Przykladowt tekst</p>
- </div>
-);
 
 ReactDOM.render(
   <App />,
